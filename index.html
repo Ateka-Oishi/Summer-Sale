@@ -152,7 +152,7 @@
                 <h2 class="card-title">Have coupon?</h2>
                 <div class="mt-5 flex">
                 <input class="w-9/12 border px-2 lg:px-5 py-2 rounded-l-xl" type="text" name="coupon" placeholder="Coupon code">
-                <button class="-ml-1 btn btn-secondary rounded-r-xl rounded-l-none bg-[#E527B2] hover:bg-[#fff] text-white border-3 border-[#E527B2] hover:text-[#E527B2] px-5 lg:px-7" disabled="true">Apply</button>
+                <button id="apply-coupon" class="-ml-1 btn btn-secondary rounded-r-xl rounded-l-none bg-[#E527B2] hover:bg-[#fff] text-white border-3 border-[#E527B2] hover:text-[#E527B2] px-5 lg:px-7" disabled="true">Apply</button>
             </div>
             </div>
             </div>
@@ -163,13 +163,13 @@
             </div>
             <hr>
                 <div>
-                <h1 class="mt-3 text-lg font-semibold">Total price: <span class="text-gray-400"> 00.00</span><span class="text-gray-400">TK</span></h1>
-                <h1 class="text-lg font-semibold">Discount : <span class="text-gray-400"> 00.00</span><span class="text-gray-400">TK</span></h1>
-                <h1 class="text-lg font-semibold">Total: <span class="text-gray-400"> 00.00</span><span class="text-gray-400">TK</span></h1>
+                <h1 class="mt-3 text-lg font-semibold">Total price: <span class="text-gray-400" id="price-total"> 00.00</span><span class="text-gray-400">TK</span></h1>
+                <h1 class="text-lg font-semibold">Discount : <span class="text-gray-400" id="get-discount"> 00.00</span><span class="text-gray-400">TK</span></h1>
+                <h1 class="text-lg font-semibold">Total: <span class="text-gray-400" id="total"> 00.00</span><span class="text-gray-400">TK</span></h1>
             </div>
             <hr>
                 <!-- make purchase -->
-                <button class="mt-3 btn btn-secondary w-full bg-[#E527B2] text-white border-[#E527B2] hover:bg-[#fff] hover:text-[#E527B2] hover:border-[#E527B2]" disabled="true">Make Purchase</button>
+                <button class="mt-3 btn btn-secondary w-full bg-[#E527B2] text-white border-[#E527B2] hover:bg-[#fff] hover:text-[#E527B2] hover:border-[#E527B2]" id="purchase-btn" disabled="true">Make Purchase</button>
                 <dialog class="modal modal-bottom sm:modal-middle">
                 <form method="dialog" class="modal-box">
                 <div  class="flex justify-center">                               
